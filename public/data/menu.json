@@ -1,0 +1,18 @@
+ [
+        {
+            "menuItemName": "Home",
+            "menuItemLink": ""
+        },
+        {
+            "menuItemName": "About Us",
+            "menuItemLink": ""
+        },
+        {
+            "menuItemName": "Recipe",
+            "menuItemLink": ""
+        },
+        {
+            "menuItemName": "Gallery",
+            "menuItemLink": ""
+        }
+    ]

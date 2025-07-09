@@ -1,0 +1,46 @@
+@import '~bootstrap/scss/bootstrap';
+
+.home-banner{
+    border-bottom: 0.25rem solid #991414;
+    margin-bottom: 0.5rem;
+    position: relative;
+    width: 100%;
+}
+
+.popular--list{
+    list-style: none; margin: 0; padding: 0; display: flex; justify-content: space-between; width: 100%;
+   li{
+    width: calc(100%/5 - 0.75rem);
+    margin-right: 0.75rem;
+    padding: 0.25rem;
+    border:1px solid #d7d7d7;
+    border-radius: 0.25rem;
+    position: relative;
+    cursor: pointer;
+    &:nth-child(5n+5){
+        margin-right: 0;
+    }
+    .item__caption{
+        display: none;
+    }
+    &:hover{
+       .item__caption{
+        background: rgba(0,0,0,.5);
+        width: calc(100% - .5rem);
+        padding: .75rem 0.5rem;
+        position: absolute;
+        bottom: 0.25rem;
+        display: block;
+
+        h5{
+            font-size: 1.125rem;
+            color:#fff;
+        }
+        h6{
+            font-size: 1rem;
+            color:#ff0;
+        }
+    } 
+    }
+   }
+}
