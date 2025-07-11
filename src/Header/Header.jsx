@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
 import Button from 'react-bootstrap/Button'
 import './Header.scss'
-
+import { NavLink } from 'react-router-dom';
 function Logo(){
     let imgUrl = "assets/img/Logo.svg";
     let logoTxt = "Chef's Kitchen."
@@ -27,7 +27,7 @@ function Menu(){
         },
         {
             "menuItemName": "About Us",
-            "menuItemLink": ""
+            "menuItemLink": "/about"
         },
         {
             "menuItemName": "Recipe",
@@ -47,8 +47,8 @@ function Menu(){
             <Col xs={6} md={8}>
                 <Nav className="me-auto">
                     {menuUrl.map((menu) => (
-                         <Nav.Link>
-                            {menu.menuItemName}
+                        <Nav.Link as={NavLink} to={menu.menuItemLink}>
+                        {menu.menuItemName}
                         </Nav.Link>
                     ))}
                       <Nav.Link className="d-block d-md-none d-lg-none">Menu</Nav.Link>

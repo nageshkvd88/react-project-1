@@ -4,6 +4,7 @@ import MainBanner from './../Banner/MainBanner';
 import PopularItems from './../modules/PopularItems'
 import TopRatedItems from './../modules/TopRatedItems'
 import {Popular, TopRate} from '../Food'
+import Userinfo from './Userinfo';
 
 const Home = () => {
 
@@ -16,8 +17,9 @@ const [TopRatedFood, setTopRatedFood] = useState(TopRate)
     <div>
       <Header />
       <MainBanner />
-      <PopularItems food={PopularFood}                  />
+      <PopularItems food={PopularFood} />
       <TopRatedItems topFood={TopRatedFood} />
+      <Userinfo />
     </div>
   )
 }
